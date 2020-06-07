@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale-1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Pure CSS Slider</title>
+ <style>
+     
+     @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Roboto&display=swap');
+
+    
+    html, body{
+ width: 100%;
+ height: 100%;
+ padding: 0;
+ margin: 0px;
+}
+     
+     header{
+         position: sticky;
+         top: 0;
+         height:auto;
+         padding: 10px 6px;
+         z-index: 1;
+     }
+     
+     
+     
+     
+     h1 {
+         max-height:35%;
+         font-family: Domine;
+         font-size:85px;
+         text-align: center;
+         
+         
+         
+         
+     }
+slider {
+ display: block;
+ width: 100%;
+ height: 100%;
+ background-color: #1f1f1f;
+ overflow: hidden;
+ position: absolute;
+}
+
+slider > * {
+ position: absolute;
+ display: block;
+ width: 100%;
+ height: 100%;
+ background: #fff;
+ animation: slide 12s infinite;
+ overflow: hidden;
+}
+
+slide:nth-child(1){
+ left: 0%;
+ animation-delay: 0s;
+ background-image: url();
+ background-size: auto;
+ background-position: center;
+ background-repeat: no-repeat;    
+}
+
+slide:nth-child(2){
+ animation-delay: 3s;
+ background-image: url();
+ background-size: auto;
+ background-position: center;
+ background-repeat: no-repeat;    
+}
+
+slide:nth-child(3){
+ animation-delay: 6s;
+ background-image: url();
+ background-size: auto;
+ background-position: center;
+ background-repeat: no-repeat;    
+}
+
+slide:nth-child(4){
+ left: 0%;
+ animation-delay: 9s;
+ background-image: url();
+ background-size:auto;
+ background-position: center;
+ background-repeat: no-repeat;    
+}
+
+slide p {
+ font-family: Comfortaa;
+ font-size: 70px;
+ text-align: center;
+ display: inline-block;
+ width: 100%;
+ margin-top: 340px;
+ color: #fff;
+}
+
+@keyframes slide {
+ 0% { left: 100%; width: 100%; }
+ 5% { left: 0%; }
+ 25% { left: 0%; }
+ 30% { left: -100%; width: 100%; }
+ 30.0001% { left: -100%; width: 0%; }
+ 100% { left: 100%; width: 0%; }
+}
+
+
+
+
+    
+    
+    
+    </style>
+</head>
+<body>
+<header id="header" style="background-color: rgb(50, 50, 50)">
+   <img src="https://www.yamahamusiclondon.com/sites/ymlv5.93/images/headerYamahaLogo.png" alt="logo">
+    
+
+</header>
+<h1>YAMAHA F310</h1>
+ <slider>
+  <slide><img src="https://images-na.ssl-images-amazon.com/images/I/51INShoKdNL._SL1000_.jpg" alt="da" style="max-width: 35%; display: block; margin: 0 auto;"></slide>
+  <slide><img src="https://www.seamusician.com/image/sea/image/cache/data/all_product_images/product-2040/0-acoustic-guitar-strings-8763-311783801-5ae29a3d66b39c41df5c3a9aa5c45d72-999x999.jpg" alt="sad" style="max-width: 35%; display: block; margin: 0 auto;"></slide>
+  <slide><img src="https://images-na.ssl-images-amazon.com/images/I/51iZPWNx-ZL._SL1000_.jpg" alt="asd" style="max-width: 35%; display: block; margin: 0 auto;" ></slide>
+
+  <slide><img src="https://www.devmusical.in/assets/1582898945823-Fender%20CD%2060%20V3%20SunBurst%20Version%203%20Dreadnought%20Walnut%20Fingerboard%20Acoustic%20Guitar.jpg" alt="aad" style=" max-width: 35%; max-height: 75%; display: block; margin: 0 auto;"></slide>
+   </slider>
+</body>
+</html>
